@@ -106,6 +106,7 @@
                 <div class="space-x-6 text-sm font-medium text-slate-300">
                     <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
                     <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
                     <a href="#achievements" class="hover:text-emerald-400 transition-colors">Achievements</a>
                     <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
                 </div>
@@ -116,11 +117,10 @@
             <div class="w-full grid md:grid-cols-12 gap-8 items-center">
                 
                 <div class="md:col-span-5 flex justify-center">
-                    <div class="relative group cursor-pointer" onclick="openImageModal('photo.jpg', 'Dishant Hiralal Pawar')">
+                    <div class="relative group cursor-pointer" onclick="openImageModal('./images/photo.jpg', 'Dishant Hiralal Pawar')">
                         <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
                         <div class="relative bg-slate-900 p-3 rounded-2xl border border-slate-800">
-                            <!-- FIXED: Relative Path for Deployment -->
-                            <img src="./images/photo.jpg">" alt="Dishant Pawar" class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-xl transition duration-500 transform group-hover:scale-[1.02]">
+                            <img src="./images/photo.jpg" alt="Dishant Pawar" class="rounded-xl max-w-full h-auto">
                             <div class="absolute inset-0 bg-emerald-950/40 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                 <span class="bg-slate-900/90 text-emerald-400 px-4 py-2 rounded-full text-xs font-semibold border border-emerald-500/20 tracking-wider">VIEW PROFILE IMAGE</span>
                             </div>
@@ -175,6 +175,59 @@
             </div>
         </section>
 
+        <section id="projects" class="max-w-5xl mx-auto px-6 py-20">
+            <div class="flex items-center space-x-4 mb-10">
+                <h2 class="text-4xl font-bold tracking-tight">Featured Engineering Projects</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/40 transition-all duration-300 glow-hover">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-3xl">🛡️</span>
+                            <a href="https://github.com/dishantpawar04" target="_blank" class="text-slate-400 hover:text-emerald-400 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.0.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">PLANMITRA</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            PlanMitra
+
+PlanMitra is a smart and user-friendly task planning web application designed to help students and professionals organize their daily activities efficiently. Users can create tasks, set priorities, track progress, and manage their schedules in a simple and intuitive interface.
+
+The platform aims to improve productivity by helping users stay focused on their goals and complete tasks on time. With features like task categorization, progress tracking, timers, and reward-based motivation, PlanMitra transforms daily planning into an engaging experience.
+
+Built using modern web technologies, PlanMitra provides a clean design, responsive layout, and seamless user experience across devices. The project showcases practical implementation of frontend development concepts while solving real-world productivity challenges.
+
+Key Features
+Create, edit, and delete tasks
+Set task priorities and deadlines
+Built-in focus timer for productivity
+Progress tracking dashboard
+Reward system for completed tasks
+Responsive and user-friendly interface
+No backend required (frontend-based version)
+Tech Stack
+HTML5
+CSS3
+JavaScript
+Local Storage for data persistence
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="bg-slate-950 px-3 py-1 rounded-md text-xs font-mono text-emerald-400 border border-emerald-500/10">HTML</span>
+                        <span class="bg-slate-950 px-3 py-1 rounded-md text-xs font-mono text-emerald-400 border border-emerald-500/10">javascript</span>
+                        <span class="bg-slate-950 px-3 py-1 rounded-md text-xs font-mono text-emerald-400 border border-emerald-500/10">CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/40 transition-all duration-300 glow-hover">
+                    <p>COMING SOON</p>
+                   
+                </div>
+            </div>
+        </section>
+
         <section id="achievements" class="max-w-5xl mx-auto px-6 py-20">
             <div class="flex items-center space-x-4 mb-10">
                 <h2 class="text-4xl font-bold tracking-tight">Milestones & Focus</h2>
@@ -189,9 +242,7 @@
                             <p class="text-slate-400 text-sm">Solved 500+ Competitive Coding Problems across CodeChef Platforms.</p>
                         </div>
                     </div>
-                    <!-- ADDED: View Badge Trigger Button -->
-                    <button onclick="openImageModal(
-'./images/codechef-badge.png', 'CodeChef & Platform Badges' ) " class="px-4 py-2 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 text-xs font-mono uppercase rounded transition-all duration-300">
+                    <button onclick="openImageModal('./images/codechef-badge.png', 'CodeChef & Platform Badges')" class="px-4 py-2 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 text-xs font-mono uppercase rounded transition-all duration-300">
                         View Badges ↗
                     </button>
                 </div>
@@ -209,13 +260,40 @@
                         <p class="text-slate-400 text-sm">Finished comprehensive C Language foundational path logic on CodeChef.</p>
                     </div>
                 </div>
-                <div class="flex items-start space-x-4">
+                <div class="flex items-start space-x-4 border-b border-slate-800/60 pb-6">
                     <span class="text-xl">🤖</span>
                     <div>
                         <h4 class="font-semibold text-white">Advanced AI Implementations</h4>
                         <p class="text-slate-400 text-sm">Building custom workflows, dynamic text reasoning frameworks, and autonomous assistant agents.</p>
                     </div>
                 </div>
+
+                <div class="pt-4">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <span>📜</span> Verified Technical Certifications
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 flex justify-between items-center hover:border-emerald-500/20 transition-colors">
+                            <div>
+                                <h5 class="font-semibold text-sm text-white">C language Completion </h5>
+                                <p class="text-xs text-slate-500">Verified Path Completion</p>
+                            </div>
+                            <button onclick="openImageModal('./images/cclang.png', ' C LANGUAGE Certificate')" class="text-xs font-mono uppercase px-3 py-1.5 bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 rounded text-emerald-400 transition-colors border border-slate-800">
+                                View ↗
+                            </button>
+                        </div>
+                        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/80 flex justify-between items-center hover:border-emerald-500/20 transition-colors">
+                            <div>
+                                <h5 class="font-semibold text-sm text-white">Java Object-Oriented Programming</h5>
+                                <p class="text-xs text-slate-500">OOPS JAVA </p>
+                            </div>
+                            <button onclick="openImageModal('./images/java.png', 'Java OOPS PATH COMPLETION Certificate')" class="text-xs font-mono uppercase px-3 py-1.5 bg-slate-900 hover:bg-emerald-500 hover:text-slate-950 rounded text-emerald-400 transition-colors border border-slate-800">
+                                View ↗
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -232,7 +310,6 @@
         </section>
     </div>
 
-    <!-- MODAL: Dynamically handles both profile image and badges -->
     <div id="image-modal" class="fixed inset-0 bg-black/95 z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center justify-center p-4">
         <button onclick="closeImageModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-3xl font-light focus:outline-none">&times;</button>
         <div class="max-w-3xl max-h-[85vh] relative" onclick="event.stopPropagation()">
@@ -268,7 +345,7 @@
             }, 400);
         }
 
-        // Updated Image Popup Modal Controls to accept parameters
+        // Image Popup Modal Controls
         function openImageModal(imageSrc, captionText) {
             const modal = document.getElementById('image-modal');
             const modalImg = document.getElementById('modal-img');
